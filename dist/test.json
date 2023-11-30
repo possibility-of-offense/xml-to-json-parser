@@ -1,0 +1,51 @@
+{
+    "products": [
+        {
+            "id": "M15121100",
+            "category": "Blazers",
+            "gender": "Man",
+            "display-name": "Stefan jeans 5890",
+            "long-description": "Confectionn\u00e9 dans du coton bio extensible pour plus de confort, ce jean noir pr\u00e9sente une coupe skinny. Ce mod\u00e8le noir arbore une braguette zipp\u00e9e.",
+            "online-flag": "true",
+            "available-flag": "true",
+            "custom-attributes": [
+                "JEANS",
+                "DENIM",
+                "93% Bomuld 5% PBT 2% Elastan",
+                "93% Baumwolle 5% PBT 2% Elastan",
+                "92% Cotton 6% Polyester 2% Elastane",
+                "92% Cotton 6% Polyester 2% Elastane",
+                "{\"CHF\":\"159.00\",\"DKK\":\"800.00\",\"EUR\":\"119.00\",\"GBP\":\"110.00\",\"NOK\":\"1299.00\",\"SEK\":\"1299.00\"}"
+            ],
+            "variations": [
+                {
+                    "M1512110000081732327": {
+                        "color": [
+                            "BLACK RINSE"
+                        ],
+                        "size": [
+                            "27/32"
+                        ]
+                    }
+                },
+                {
+                    "M1512110000081732336": {
+                        "color": [
+                            "BLACK RINSE"
+                        ],
+                        "size": [
+                            "36/32"
+                        ]
+                    }
+                },
+                {
+                    "5711459000002": {
+                        "color": [
+                            "BLACK RINSE"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,368 @@
+<collection>
+    <product product-id="M15121100">
+        <ean/>
+        <upc/>
+        <unit/>
+        <unit-quantity>0</unit-quantity>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <display-name xml:lang="da">Stefan jeans 5890</display-name>
+        <display-name xml:lang="de">Stefan jeans 5890</display-name>
+        <display-name xml:lang="x-default">Stefan jeans 5890</display-name>
+        <display-name xml:lang="en">Stefan jeans 5890</display-name>
+        <long-description xml:lang="da">Slim-fit jeans med lige ben. Fremstillet i økologisk bomulds denim med comfort-stretch der giver en fleksibel pasform. Indfarvet med "Stay-black" teknologi der holder den sorte farve, vasken er produceret med Low Impact vand-besparende teknologi.</long-description>
+        <long-description xml:lang="de">Diese Jeans wurde aus Bio-Baumwolle mit einem Hauch von Stretch für eine flexible Passform gewebt und schwarz gefärbt. Sie ist mit einer schmalen Beinsilhouette geschnitten. Eine Reißverschluss schließt diese schwarze Jeans.</long-description>
+        <long-description xml:lang="x-default">Slim-fit jeans with a straight leg shape. Made in organic cotton denim with comfort-stretch which creates a better fit. Dyed with "Stay-black" technology keeping the black colour dark for longer and produced with Low Impact water-saving technology.</long-description>
+        <long-description xml:lang="en">Slim-fit jeans with a straight leg shape. Made in organic cotton denim with comfort-stretch which creates a better fit. Dyed with "Stay-black" technology keeping the black colour dark for longer and produced with Low Impact water-saving technology.</long-description>
+        <long-description xml:lang="fr">Confectionné dans du coton bio extensible pour plus de confort, ce jean noir présente une coupe skinny. Ce modèle noir arbore une braguette zippée.</long-description>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>true</online-flag>
+        <online-flag site-id="samsoe">true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <tax-class-id>standard</tax-class-id>
+        <brand>Samsøe Samsøe</brand>
+        <search-rank>2</search-rank>
+        <sitemap-included-flag>true</sitemap-included-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="brand">S&amp;S</custom-attribute>
+            <custom-attribute attribute-id="category">JEANS</custom-attribute>
+            <custom-attribute attribute-id="categoryGroup">DENIM</custom-attribute>
+            <custom-attribute attribute-id="collection">1501</custom-attribute>
+            <custom-attribute attribute-id="composition" xml:lang="da">93% Bomuld 5% PBT 2% Elastan</custom-attribute>
+            <custom-attribute attribute-id="composition" xml:lang="de">93% Baumwolle 5% PBT 2% Elastan</custom-attribute>
+            <custom-attribute attribute-id="composition" xml:lang="x-default">92% Cotton 6% Polyester 2% Elastane</custom-attribute>
+            <custom-attribute attribute-id="composition" xml:lang="en">92% Cotton 6% Polyester 2% Elastane</custom-attribute>
+            <custom-attribute attribute-id="context">
+                <value>BlueBelief</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="countryOfOriginCode">TR</custom-attribute>
+            <custom-attribute attribute-id="countryOfOriginDisplayValue">Turkey</custom-attribute>
+            <custom-attribute attribute-id="dessQuality">Jeans</custom-attribute>
+            <custom-attribute attribute-id="detailedRefinementCategory1">jeans</custom-attribute>
+            <custom-attribute attribute-id="detailedRefinementCategory2">jeans</custom-attribute>
+            <custom-attribute attribute-id="material" xml:lang="da">{"Yderstof":["68% Økologisk bomuld","25% Bomuld","5% Polyester","2% Elastane"],"Lommefor":["100% Økologisk bomuld","100% Økologisk bomuld"]}</custom-attribute>
+            <custom-attribute attribute-id="material" xml:lang="de">{"Hauptstoff":["68% Biobaumwolle","25% Baumwolle","5% Polyester","2% Elasthan"],"Taschenfutter":["100% Biobaumwolle","100% Biobaumwolle"]}</custom-attribute>
+            <custom-attribute attribute-id="material" xml:lang="en">{"Main fabric":["68% Organic cotton","25% Cotton","5% Polyester","2% Elastane"],"Pocket lining":["100% Organic cotton","100% Organic cotton"]}</custom-attribute>
+            <custom-attribute attribute-id="material" xml:lang="fr">{"Tissu principal":["68% Coton biologique","25% Coton","5% Polyester","2% Elastane"],"Doublure de poche":["100% Coton biologique","100% Coton biologique"]}</custom-attribute>
+            <custom-attribute attribute-id="material" xml:lang="sv">{"Main fabric":["68% Ekologisk bomull","25% Bomull","5% Polyester","2% Elastane"],"Pocket lining":["100% Ekologisk bomull","100% Ekologisk bomull"]}</custom-attribute>
+            <custom-attribute attribute-id="packingInfo">FLATPACKED GARMENT</custom-attribute>
+            <custom-attribute attribute-id="search_attr" xml:lang="x-default">new-arrivals-setup</custom-attribute>
+            <custom-attribute attribute-id="sizeGroupingConfig">{"BLACK RINSE":{"27/32":"M1512110000081732327","27/34":"M1512110000081734327","28/32":"M1512110000081732328","28/34":"M1512110000081734328","29/32":"M1512110000081732329","29/34":"M1512110000081734329","30/32":"M1512110000081732330","30/34":"M1512110000081734330","31/32":"M1512110000081732331","31/34":"M1512110000081734331","32/32":"M1512110000081732332","32/34":"M1512110000081734332","33/32":"M1512110000081732333","33/34":"M1512110000081734333","34/32":"M1512110000081732334","34/34":"M1512110000081734334","36/32":"M1512110000081732336","36/34":"M1512110000081734336"}}</custom-attribute>
+            <custom-attribute attribute-id="sizeGroupingRange">27/32 - 36/34</custom-attribute>
+            <custom-attribute attribute-id="statisticsgroup1code">5890</custom-attribute>
+            <custom-attribute attribute-id="statisticsgroup1name">Jeans</custom-attribute>
+            <custom-attribute attribute-id="statisticsgroup2code">102</custom-attribute>
+            <custom-attribute attribute-id="statisticsgroup2name">MENSWEAR</custom-attribute>
+            <custom-attribute attribute-id="statisticsgroup3code">21</custom-attribute>
+            <custom-attribute attribute-id="statisticsgroup3name">JEANS</custom-attribute>
+            <custom-attribute attribute-id="statisticsgroup4code">1</custom-attribute>
+            <custom-attribute attribute-id="statisticsgroup4name">FLATPACKED GARMENT</custom-attribute>
+            <custom-attribute attribute-id="statisticsgroup5code">5</custom-attribute>
+            <custom-attribute attribute-id="statisticsgroup5name">DENIM</custom-attribute>
+            <custom-attribute attribute-id="suggestedRetailPrice">{"CHF":"159.00","DKK":"800.00","EUR":"119.00","GBP":"110.00","NOK":"1299.00","SEK":"1299.00"}</custom-attribute>
+            <custom-attribute attribute-id="weight">0.42</custom-attribute>
+        </custom-attributes>
+        <variations>
+            <attributes>
+                <variation-attribute attribute-id="color" variation-attribute-id="color" slicing-attribute="true">
+                    <display-name xml:lang="da">Farve</display-name>
+                    <display-name xml:lang="de">Farbe</display-name>
+                    <display-name xml:lang="x-default">Colour</display-name>
+                    <display-name xml:lang="en">Colour</display-name>
+                    <display-name xml:lang="en-GB">Colour</display-name>
+                    <display-name xml:lang="fr">Couleur</display-name>
+                    <display-name xml:lang="sv">Färg</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="BLACK RINSE">
+                            <display-value xml:lang="x-default">BLACK RINSE</display-value>
+                        </variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+                <variation-attribute attribute-id="size" variation-attribute-id="size">
+                    <display-name xml:lang="da">Størrelse</display-name>
+                    <display-name xml:lang="de">Größe</display-name>
+                    <display-name xml:lang="x-default">Size</display-name>
+                    <display-name xml:lang="en">Size</display-name>
+                    <display-name xml:lang="en-GB">Size</display-name>
+                    <display-name xml:lang="fr">Taille</display-name>
+                    <display-name xml:lang="sv">Storlek</display-name>
+                    <variation-attribute-values>
+                        <variation-attribute-value value="27/32">
+                            <display-value xml:lang="x-default">27/32</display-value>
+                            <display-value xml:lang="en">27/32</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="28/32">
+                            <display-value xml:lang="x-default">28/32</display-value>
+                            <display-value xml:lang="en">28/32</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="29/32">
+                            <display-value xml:lang="x-default">29/32</display-value>
+                            <display-value xml:lang="en">29/32</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="30/32">
+                            <display-value xml:lang="x-default">30/32</display-value>
+                            <display-value xml:lang="en">30/32</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="31/32">
+                            <display-value xml:lang="x-default">31/32</display-value>
+                            <display-value xml:lang="en">31/32</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="32/32">
+                            <display-value xml:lang="x-default">32/32</display-value>
+                            <display-value xml:lang="en">32/32</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="33/32">
+                            <display-value xml:lang="x-default">33/32</display-value>
+                            <display-value xml:lang="en">33/32</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="34/32">
+                            <display-value xml:lang="x-default">34/32</display-value>
+                            <display-value xml:lang="en">34/32</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="36/32">
+                            <display-value xml:lang="x-default">36/32</display-value>
+                            <display-value xml:lang="en">36/32</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="27/34">
+                            <display-value xml:lang="x-default">27/34</display-value>
+                            <display-value xml:lang="en">27/34</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="28/34">
+                            <display-value xml:lang="x-default">28/34</display-value>
+                            <display-value xml:lang="en">28/34</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="29/34">
+                            <display-value xml:lang="x-default">29/34</display-value>
+                            <display-value xml:lang="en">29/34</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="30/34">
+                            <display-value xml:lang="x-default">30/34</display-value>
+                            <display-value xml:lang="en">30/34</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="31/34">
+                            <display-value xml:lang="x-default">31/34</display-value>
+                            <display-value xml:lang="en">31/34</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="32/34">
+                            <display-value xml:lang="x-default">32/34</display-value>
+                            <display-value xml:lang="en">32/34</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="33/34">
+                            <display-value xml:lang="x-default">33/34</display-value>
+                            <display-value xml:lang="en">33/34</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="34/34">
+                            <display-value xml:lang="x-default">34/34</display-value>
+                            <display-value xml:lang="en">34/34</display-value>
+                        </variation-attribute-value>
+                        <variation-attribute-value value="36/34">
+                            <display-value xml:lang="x-default">36/34</display-value>
+                            <display-value xml:lang="en">36/34</display-value>
+                        </variation-attribute-value>
+                    </variation-attribute-values>
+                </variation-attribute>
+            </attributes>
+            <variants>
+                <variant product-id="M1512110000081732327"/>
+                <variant product-id="M1512110000081732336"/>
+                <variant product-id="5711459000002"/>
+            </variants>
+        </variations>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <product product-id="M1512110000081732336">
+        <ean>5711450308350</ean>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>true</online-flag>
+        <online-flag site-id="samsoe">true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="articleColorCode">00081</custom-attribute>
+            <custom-attribute attribute-id="color">BLACK RINSE</custom-attribute>
+            <custom-attribute attribute-id="context">
+                <value>VariantBlueBelief</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="countryOfOriginCode">TR</custom-attribute>
+            <custom-attribute attribute-id="countryOfOriginDisplayValue">Turkey</custom-attribute>
+            <custom-attribute attribute-id="length">32</custom-attribute>
+            <custom-attribute attribute-id="new-arrival-date">2019-11-18T23:00:00.000+0000</custom-attribute>
+            <custom-attribute attribute-id="season">BASIC</custom-attribute>
+            <custom-attribute attribute-id="size">36/32</custom-attribute>
+            <custom-attribute attribute-id="tariff">6203423100</custom-attribute>
+            <custom-attribute attribute-id="weight">0</custom-attribute>
+        </custom-attributes>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+    <product product-id="M1512110000081732327">
+        <ean>5711450508859</ean>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>true</online-flag>
+        <online-flag site-id="samsoe">true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="articleColorCode">00081</custom-attribute>
+            <custom-attribute attribute-id="color">BLACK RINSE</custom-attribute>
+            <custom-attribute attribute-id="context">
+                <value>VariantBlueBelief</value>
+            </custom-attribute>
+            <custom-attribute attribute-id="countryOfOriginCode">TR</custom-attribute>
+            <custom-attribute attribute-id="countryOfOriginDisplayValue">Turkey</custom-attribute>
+            <custom-attribute attribute-id="length">32</custom-attribute>
+            <custom-attribute attribute-id="new-arrival-date">2019-11-18T23:00:00.000+0000</custom-attribute>
+            <custom-attribute attribute-id="season">BASIC</custom-attribute>
+            <custom-attribute attribute-id="size">27/32</custom-attribute>
+            <custom-attribute attribute-id="tariff">6203423100</custom-attribute>
+            <custom-attribute attribute-id="weight">0</custom-attribute>
+        </custom-attributes>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <product product-id="5711459000002">
+        <ean>5711459000002</ean>
+        <upc/>
+        <unit/>
+        <min-order-quantity>1</min-order-quantity>
+        <step-quantity>1</step-quantity>
+        <store-force-price-flag>false</store-force-price-flag>
+        <store-non-inventory-flag>false</store-non-inventory-flag>
+        <store-non-revenue-flag>false</store-non-revenue-flag>
+        <store-non-discountable-flag>false</store-non-discountable-flag>
+        <online-flag>false</online-flag>
+        <online-flag site-id="samsoe">true</online-flag>
+        <available-flag>true</available-flag>
+        <searchable-flag>true</searchable-flag>
+        <page-attributes/>
+        <custom-attributes>
+            <custom-attribute attribute-id="color">BLACK RINSE</custom-attribute>
+            <custom-attribute attribute-id="composition" xml:lang="en">{"Padding":["100% Polyester",""],"Shell":["59% Cotton"," 41% Polyester",""]}</custom-attribute>
+            <custom-attribute attribute-id="season">22.02</custom-attribute>
+        </custom-attributes>
+        <pinterest-enabled-flag>false</pinterest-enabled-flag>
+        <facebook-enabled-flag>false</facebook-enabled-flag>
+        <store-attributes>
+            <force-price-flag>false</force-price-flag>
+            <non-inventory-flag>false</non-inventory-flag>
+            <non-revenue-flag>false</non-revenue-flag>
+            <non-discountable-flag>false</non-discountable-flag>
+        </store-attributes>
+    </product>
+
+    <category category-id="root">
+        <display-name xml:lang="da">Rodstruktur - slet ikke!!!</display-name>
+        <display-name xml:lang="de">Rodstruktur - slet ikke!!!</display-name>
+        <display-name xml:lang="x-default">Samsoe Stamdata (read-only)</display-name>
+        <display-name xml:lang="en">Rodstruktur - slet ikke!!!</display-name>
+        <online-flag>true</online-flag>
+        <template/>
+        <sitemap-included-flag>false</sitemap-included-flag>
+        <page-attributes/>
+    </category>
+
+    <category category-id="samsoe-products">
+        <display-name xml:lang="x-default">samsoe-products</display-name>
+        <display-name xml:lang="en">samsoe-products</display-name>
+        <online-flag>true</online-flag>
+        <parent>root</parent>
+        <position>0.0</position>
+        <template>rendering/category/categoryproducthits</template>
+        <page-attributes/>
+    </category>
+
+    <category category-id="b2c_man_dmwr">
+        <display-name xml:lang="da">Man</display-name>
+        <display-name xml:lang="de">Man</display-name>
+        <display-name xml:lang="x-default">Man</display-name>
+        <display-name xml:lang="en">Man</display-name>
+        <online-flag>true</online-flag>
+        <parent>root</parent>
+        <template>rendering/category/categoryproducthits</template>
+        <sitemap-included-flag>true</sitemap-included-flag>
+        <page-attributes/>
+    </category>
+
+    <category category-id="b2c_man_dmwrr">
+        <display-name xml:lang="da">Mane</display-name>
+        <display-name xml:lang="de">Man</display-name>
+        <display-name xml:lang="x-default">Man</display-name>
+        <display-name xml:lang="en">Man</display-name>
+        <online-flag>true</online-flag>
+        <parent>b2c_man_dmwr</parent>
+        <template>rendering/category/categoryproducthits</template>
+        <sitemap-included-flag>true</sitemap-included-flag>
+        <page-attributes/>
+    </category>
+
+    <category category-id="b2c_man_dmwrrr">
+        <display-name xml:lang="da">Manee</display-name>
+        <display-name xml:lang="de">Man</display-name>
+        <display-name xml:lang="x-default">Man</display-name>
+        <display-name xml:lang="en">Man</display-name>
+        <online-flag>true</online-flag>
+        <parent>b2c_man_dmwrr</parent>
+        <template>rendering/category/categoryproducthits</template>
+        <sitemap-included-flag>true</sitemap-included-flag>
+        <page-attributes/>
+    </category>
+
+    <category category-id="b2c_m_dw_2blazers">
+        <display-name xml:lang="da">Blazers</display-name>
+        <display-name xml:lang="de">Blazers</display-name>
+        <display-name xml:lang="x-default">Blazers</display-name>
+        <display-name xml:lang="en">Blazers</display-name>
+        <online-flag>true</online-flag>
+        <parent>b2c_man_dmwrrr</parent>
+        <template>rendering/category/categoryproducthits</template>
+        <sitemap-included-flag>true</sitemap-included-flag>
+        <page-attributes/>
+    </category>
+
+    <category-assignment category-id="b2c_m_dw_2blazers" product-id="M15121100">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+
+</collection>
