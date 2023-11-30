@@ -41,6 +41,7 @@ from helpers.find_category_id import find_category_id
 from helpers.find_root_category import find_root_category
 from helpers.find_category_name import find_category_name
 from helpers.check_if_list_has_dictionary import check_if_list_has_dict
+from helpers.check_if_product_has_variants import check_if_product_has_variants
 
 # Main
 
@@ -50,6 +51,9 @@ products = [elem for elem in root.iter('product')]
 
 for product in products:
     product_dict = dict()
+
+    if check_if_product_has_variants(product) is False:
+        continue
 
     # Check if the product has one of the mandatory XML keys/tags with attributes
     if check_if_element_has_attrs(product, mandatory_xml_keys) is True:
