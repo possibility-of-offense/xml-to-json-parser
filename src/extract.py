@@ -6,9 +6,7 @@ import sys
 rootpath = os.path.join(os.getcwd(), '..')
 sys.path.append(rootpath)
 
-tree = ET.parse('./xml/master.xml')
-# tree = ET.parse('./xml/test.xml')
-# tree = ET.parse('./xml/test2.xml')
+tree = ET.parse('./xml/test.xml')
 root = tree.getroot()
 
 # List to append all dictionaries
@@ -145,9 +143,7 @@ try:
 
     json_data = json.dumps({"products": products_info}, indent = 4)
 
-    # with open('../dist/test.json', 'w') as file:
-    with open('../dist/master.json', 'w') as file:
-    # with open('../dist/test2.json', 'w') as file:
+    with open('../dist/test.json', 'w') as file:
         file.write(json_data)
 except Exception as e:
     type, value, traceback = sys.exc_info()
