@@ -115,7 +115,7 @@ try:
                                             if val.find(variation_attribute_values_key):
                                                 for var_attr in val.find(variation_attribute_values_key):
 
-                                                    for variant in variants:
+                                                    for variant gitin variants:
                                                         variant_dict = dict()
                                                         variant_id = variant.get('product-id')
 
