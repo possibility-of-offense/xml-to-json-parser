@@ -7,7 +7,8 @@ rootpath = os.path.join(os.getcwd(), '..')
 sys.path.append(rootpath)
 
 # tree = ET.parse('./xml/master.xml')
-tree = ET.parse('./xml/test.xml')
+# tree = ET.parse('./xml/test.xml')
+tree = ET.parse('./xml/test2.xml')
 root = tree.getroot()
 
 # List to append all dictionaries
@@ -42,6 +43,8 @@ from helpers.find_root_category import find_root_category
 from helpers.find_category_name import find_category_name
 from helpers.check_if_list_has_dictionary import check_if_list_has_dict
 from helpers.check_if_product_has_variants import check_if_product_has_variants
+from helpers.merge_dictionaries import merge_dictionaries
+from helpers.find_dict_in_list import find_dict_in_list
 
 # Main
 
@@ -100,40 +103,46 @@ for product in products:
 
                             # Check if there are any variants
                             if sum(1 for e in product_child.iter('variants')) > 0:
-                                # Get variants
-                                variants = product_child.iter('variant')
 
                                 for val in [elem for elem in product_child.iter('variation-attribute')]:
+                                    # Get variants
+                                    variants = product_child.iter('variant')
+
                                     if val.attrib[attribute_id_key] in get_filters:
-                                        
                                         # Loop through variation-attribute-values
                                         if val.find(variation_attribute_values_key):
                                             for var_attr in val.find(variation_attribute_values_key):
-                                                
-                                                variant_dict = dict()
 
+                                                # print(val.get(attribute_id_key), variants)
                                                 for variant in variants:
+                                                    variant_dict = dict()
                                                     variant_id = variant.get('product-id')
+
                                                     get_variant_product = root.find('./product/[@product-id="' + variant_id + '"]')
-                                                    
                                                     if get_variant_product is not None:
                                                         variant_custom_attrs = get_variant_product.iter('custom-attribute')
                                                         
                                                         for attr in variant_custom_attrs:
-                                                            if attr.get('attribute-id') in get_filters:
-                                                                if attr.text == var_attr.get('value'):
+                                                            if attr.get(attribute_id_key) in get_filters:
+                                                                if attr.get(attribute_id_key) == val.get(attribute_id_key):
                                                                     variant_dict[variant_id] = {
-                                                                        attr.get('attribute-id'): [attr.text]
+                                                                        attr.get(attribute_id_key): [attr.text]
                                                                     }
-                                                                    print(variant_dict)
-                                                
-                                                if len(variant_dict) > 0:
-                                                    product_dict[product_child_tag].append(variant_dict)
+                                                    
+                                                    finding_dict = find_dict_in_list(product_dict[product_child_tag], variant_id)
+                                                    
+                                                    if finding_dict:
+                                                        # print(finding_dict)
+                                                        merge_dictionaries(variant_dict, finding_dict, variant_id)
+                                                    else:
+                                                        if len(variant_dict) > 0:
+                                                            product_dict[product_child_tag].append(variant_dict)
     if len(product_dict) > 0:   
         products_info.append(product_dict)
 
 json_data = json.dumps({"products": products_info}, indent = 4)
 
-with open('../dist/test.json', 'w') as file:
+# with open('../dist/test.json', 'w') as file:
 # # with open('../dist/master.json', 'w') as file:
+with open('../dist/test2.json', 'w') as file:
     file.write(json_data)
