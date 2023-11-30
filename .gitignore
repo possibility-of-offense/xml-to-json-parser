@@ -1,1 +1,3 @@
-__pycache__/
+src/helpers/__pycache__/
+dist/master.json
+src/xml/master.xml
