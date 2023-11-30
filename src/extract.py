@@ -6,9 +6,9 @@ import sys
 rootpath = os.path.join(os.getcwd(), '..')
 sys.path.append(rootpath)
 
-# tree = ET.parse('./xml/master.xml')
+tree = ET.parse('./xml/master.xml')
 # tree = ET.parse('./xml/test.xml')
-tree = ET.parse('./xml/test2.xml')
+# tree = ET.parse('./xml/test2.xml')
 root = tree.getroot()
 
 # List to append all dictionaries
@@ -52,97 +52,104 @@ categories = root.findall('category')
 category_assignments = root.findall('category-assignment')
 products = [elem for elem in root.iter('product')]
 
-for product in products:
-    product_dict = dict()
+try:
+    
+    for product in products:
+        product_dict = dict()
 
-    if check_if_product_has_variants(product) is False:
-        continue
+        if check_if_product_has_variants(product) is False:
+            continue
 
-    # Check if the product has one of the mandatory XML keys/tags with attributes
-    if check_if_element_has_attrs(product, mandatory_xml_keys) is True:
-        init_dict(product_dict, product.get(product_id))
-        
-        # Find cat id
-        cat_id = find_category_id(product_dict, category_assignments)
-        cat_name = find_category_name(categories, cat_id, product_dict)
-
-        # Check if cat_name exists in top_category_names and set it in product_dict as gender
-        if cat_name and cat_name in top_category_names:
-            product_dict['gender'] = cat_name
-
-        for product_child in product:
-            product_child_tag = product_child.tag.lower()
-
-            # Check if the nested XML tag exists in the list
-            if product_child_tag in xml_keys:
-                product_dict[product_child_tag] = retrieve_value(product_child)
+        # Check if the product has one of the mandatory XML keys/tags with attributes
+        if check_if_element_has_attrs(product, mandatory_xml_keys) is True:
+            init_dict(product_dict, product.get(product_id))
             
-            if check_if_list_has_dict(xml_keys, product_child_tag):
-                for key in xml_keys:
-                    if product_child_tag in key:
-                        # Get filter from the list
-                        get_filters = key[product_child_tag]
+            # Find cat id
+            cat_id = find_category_id(product_dict, category_assignments)
+            cat_name = find_category_name(categories, cat_id, product_dict)
 
-                        # Create an empty list
-                        product_dict[product_child_tag] = list()
+            # Check if cat_name exists in top_category_names and set it in product_dict as gender
+            if cat_name and cat_name in top_category_names:
+                product_dict['gender'] = cat_name
 
-                        # If we are traversing a custom-attributes
-                        if product_child_tag == 'custom-attributes':
-                            for product_child_children in product_child:
-                                product_child_children_attrs = list(product_child_children.attrib.items())
+            for product_child in product:
+                product_child_tag = product_child.tag.lower()
 
-                                for i, v in product_child_children_attrs:
-                                    if v in get_filters:
-                                        if 'lang' in product_child_children_attrs or '{http://www.w3.org/XML/1998/namespace}lang' in product_child_children_attrs:
-                                            product_dict[product_child_tag].append(product_child_children.text)
-                                        else:
-                                            product_dict[product_child_tag].append(product_child_children.text)
+                # Check if the nested XML tag exists in the list
+                if product_child_tag in xml_keys:
+                    product_dict[product_child_tag] = retrieve_value(product_child)
+                
+                if check_if_list_has_dict(xml_keys, product_child_tag):
+                    for key in xml_keys:
+                        if product_child_tag in key:
+                            # Get filter from the list
+                            get_filters = key[product_child_tag]
 
-                        # If we are traversin a variations
-                        if product_child_tag == 'variations':
+                            # Create an empty list
+                            product_dict[product_child_tag] = list()
 
-                            # Check if there are any variants
-                            if sum(1 for e in product_child.iter('variants')) > 0:
+                            # If we are traversing a custom-attributes
+                            if product_child_tag == 'custom-attributes':
+                                for product_child_children in product_child:
+                                    product_child_children_attrs = list(product_child_children.attrib.items())
 
-                                for val in [elem for elem in product_child.iter('variation-attribute')]:
-                                    # Get variants
-                                    variants = product_child.iter('variant')
+                                    for i, v in product_child_children_attrs:
+                                        if v in get_filters:
+                                            if 'lang' in product_child_children_attrs or '{http://www.w3.org/XML/1998/namespace}lang' in product_child_children_attrs:
+                                                product_dict[product_child_tag].append(product_child_children.text)
+                                            else:
+                                                product_dict[product_child_tag].append(product_child_children.text)
 
-                                    if val.attrib[attribute_id_key] in get_filters:
-                                        # Loop through variation-attribute-values
-                                        if val.find(variation_attribute_values_key):
-                                            for var_attr in val.find(variation_attribute_values_key):
+                            # If we are traversin a variations
+                            if product_child_tag == 'variations':
 
-                                                # print(val.get(attribute_id_key), variants)
-                                                for variant in variants:
-                                                    variant_dict = dict()
-                                                    variant_id = variant.get('product-id')
+                                # Check if there are any variants
+                                if sum(1 for e in product_child.iter('variants')) > 0:
 
-                                                    get_variant_product = root.find('./product/[@product-id="' + variant_id + '"]')
-                                                    if get_variant_product is not None:
-                                                        variant_custom_attrs = get_variant_product.iter('custom-attribute')
-                                                        
-                                                        for attr in variant_custom_attrs:
-                                                            if attr.get(attribute_id_key) in get_filters:
-                                                                if attr.get(attribute_id_key) == val.get(attribute_id_key):
-                                                                    variant_dict[variant_id] = {
-                                                                        attr.get(attribute_id_key): [attr.text]
-                                                                    }
-                                                    
-                                                    finding_dict = find_dict_in_list(product_dict[product_child_tag], variant_id)
-                                                    
-                                                    if finding_dict:
-                                                        # print(finding_dict)
-                                                        merge_dictionaries(variant_dict, finding_dict, variant_id)
-                                                    else:
-                                                        if len(variant_dict) > 0:
+                                    for val in [elem for elem in product_child.iter('variation-attribute')]:
+                                        # Get variants
+                                        variants = product_child.iter('variant')
+
+                                        if val.attrib[attribute_id_key] in get_filters:
+                                            # Loop through variation-attribute-values
+                                            if val.find(variation_attribute_values_key):
+                                                for var_attr in val.find(variation_attribute_values_key):
+
+                                                    for variant in variants:
+                                                        variant_dict = dict()
+                                                        variant_id = variant.get('product-id')
+
+                                                        get_variant_product = root.find('./product/[@product-id="' + variant_id + '"]')
+                                                        if get_variant_product is not None:
+                                                            variant_custom_attrs = get_variant_product.iter('custom-attribute')
+                                                            # Loop through the custom attributes from variants
+                                                            for attr in variant_custom_attrs:
+                                                                if attr.get(attribute_id_key) in get_filters:
+                                                                    if attr.get(attribute_id_key) == val.get(attribute_id_key):
+                                                                        variant_dict[variant_id] = {
+                                                                            attr.get(attribute_id_key): [attr.text]
+                                                                        }
+
+                                                        # Find dictionary
+                                                        finding_dict = find_dict_in_list(product_dict[product_child_tag], variant_id)
+
+                                                        if finding_dict and len(variant_dict) > 0:
+                                                            for key in variant_dict[variant_id]:
+                                                                if key not in finding_dict[variant_id]:
+                                                                    finding_dict[variant_id][key] = variant_dict[variant_id][key]
+                                                                else:
+                                                                    finding_dict[variant_id][key].append(variant_dict[variant_id][key])
+                                                        elif len(variant_dict) > 0:
                                                             product_dict[product_child_tag].append(variant_dict)
-    if len(product_dict) > 0:   
-        products_info.append(product_dict)
+        if len(product_dict) > 0:
+            products_info.append(product_dict)
 
-json_data = json.dumps({"products": products_info}, indent = 4)
+    json_data = json.dumps({"products": products_info}, indent = 4)
 
-# with open('../dist/test.json', 'w') as file:
-# # with open('../dist/master.json', 'w') as file:
-with open('../dist/test2.json', 'w') as file:
-    file.write(json_data)
+    # with open('../dist/test.json', 'w') as file:
+    with open('../dist/master.json', 'w') as file:
+    # with open('../dist/test2.json', 'w') as file:
+        file.write(json_data)
+except Exception as e:
+    type, value, traceback = sys.exc_info()
+    print(e, 'Error occured', type, value)
