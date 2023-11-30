@@ -43,7 +43,6 @@ from helpers.find_root_category import find_root_category
 from helpers.find_category_name import find_category_name
 from helpers.check_if_list_has_dictionary import check_if_list_has_dict
 from helpers.check_if_product_has_variants import check_if_product_has_variants
-from helpers.merge_dictionaries import merge_dictionaries
 from helpers.find_dict_in_list import find_dict_in_list
 
 # Main
